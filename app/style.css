@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+body, html{
+	height: 100%;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bg{
+	background-image: url("images/bg-1.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(7px);
+	
+}
+
+.container{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.widget{
+	width: 400px;
+	height: 200px;
+	border-radius: 0 0 20px 20px;
+	background: rgba(299, 299, 299, 0.4);
+}
+
+.widget .left{
+	position: absolute;
+	left: 0;
+	width: 200px;
+}
+
+.widget .right{
+	position: absolute;
+	right: 0;
+	width: 200px;
+	color: #fff;
+	margin: 50px 0;
+}
+
+.icon{
+	width: 75%;
+	margin-bottom: -30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.weather-status{
+	color: #fff;
+	text-align: center;
+	margin-top: 0;
+}
+
+.widget .right .city{
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+	text-shadow: 1px 1px 5px #707070;
+}
+
+.widget .right .degree{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	text-shadow: 1px 1px 5px #707070;
+}
+.widget .right .time{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	text-shadow: 1px 1px 5px #707070;
+}
+
+.widget .bottom{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.widget .bottom div{
+	margin: 5px 10px 5px 10px;
+	text-align: center;
+	line-height: 100%;
+	font-size: 0.9em;
+	text-shadow: 1px 1px 5px #707070;
+	font-weight: 550;
+}
+
+
+.bottom div span{
+	display: block;
+}
+
+/* search box */
+
+.wrapper{
+  
+  width:400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  /* background: rgba(299, 299, 299, 0.4); */
+ 
+
+}
+
+.search_box{
+  width: 100%;
+  position: relative;
+  color: #191919;
+}
+
+.search_box input[type="text"]{
+  width: 100%;
+  padding: 10px 50px 10px 50px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.3);
+  border: 3px solid rgba(299, 299, 299, 0.4);
+  border-radius: 20px 20px 0 0;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  text-shadow: 1px 1px 5px #707070;
+}
+
+.fa-search{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  color: #fff;
+  font-size: 25px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(299, 299, 299, 0.4);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(299, 299, 299, 0.4);
+}
+
+@media screen and (max-width: 425px){
+  .search_box{
+    width: 95%;
+  }
+}

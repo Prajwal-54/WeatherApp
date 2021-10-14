@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Weather App</title>
+    <script defer src="/__/firebase/8.6.8/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.6.8/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.6.8/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    search box
+    <div class="wrapper">
+      <div class="search_box">
+        <input
+          type="text"
+          placeholder="Change City Name Here  "
+          id="searchBox"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="widget">
+        <div class="left">
+          <img src="images/day.svg" class="icon" />
+          <h5 class="weather-status"></h5>
+        </div>
+        <div class="right">
+          <h5 class="time">UTC</h5>
+          <h5 class="city"></h5>
+          <h5 class="degree"><span id="degree"></span>&#176;c</h5>
+        </div>
+        <div class="bottom">
+          <div>Wind Speed <span id="speed"> meter/sec</span></div>
+          <div>Humidity <span id="humidity"> %</span></div>
+          <div>Pressure <span id="pressure"> bar</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
